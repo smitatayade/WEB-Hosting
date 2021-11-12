@@ -1,0 +1,66 @@
+.step-container{
+  background-image:url("../../../assets/stepback.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.heading{
+  text-align: center;
+  font-size: 3.5rem;
+  padding:1rem;
+  
+  color:#666;
+}
+
+@keyframes steps {
+  from {
+      margin-left: 30%;
+  }
+
+  50% {
+      transform: scale(1);
+  }
+
+  80% {
+      transform: scale(1)
+  }
+
+  to {
+      margin-bottom: 0%;
+      transform: scale(1);
+  }
+}
+
+.p-3 {
+  animation-name: steps;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap:.5rem;
+    padding:.5rem;
+    margin-top: 5%;
+  }
+  
+  .steps .box{
+    flex:1 1 5rem;
+    padding:1rem;
+    text-align: center;
+  }
+  
+  .steps .box img{
+    border-radius: 50%;
+    border:1rem solid rgb(199, 178, 178);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  .steps .box h3{
+    font-size: 2rem;
+    color:#333;
+    padding:1rem;
+  }
+
+
+  

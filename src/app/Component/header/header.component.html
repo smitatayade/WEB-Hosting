@@ -1,0 +1,79 @@
+<div class="container-fluid">
+<header>
+    <a href="#" class="logo"><img src="assets/Towede.JPG"></a>
+    <app-language></app-language>
+    <div id="menu-bar" (click)="extendNavbar()"  *ngIf=!navBarExtended>Menu</div>
+    <span id="closemenubar" *ngIf=navBarExtended (click)="reduceNavbar()">Close</span>
+    <nav  [class.active]="navBarExtended"   class="navbar" >
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a>Hosting</a>
+                
+            </button>
+            <div class="dropdown-content">
+                <a>Shared Hosting</a>
+                <a>Cloud Hosting</a>
+                <a>cPanel Hosting</a>
+                <a>Plesk Hosting</a>
+               
+            </div>
+        </div>
+       
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a>Design</a>
+                
+            </button>
+            <div class="dropdown-content">
+                <a>Web Design</a>
+                <a>Web Management</a>
+                
+            
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a>Domain</a>
+                
+            </button>
+            <div class="dropdown-content">
+                <a>Domain Checker</a>
+                <a>WHOIS Database</a>
+                <a>Domain Transfer</a>
+            
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a>Contact Us</a>
+                <div class="dropdown-content" style="width:40px;">
+                    <a>Call:842-842-28-92</a>
+                    <a>Email:reachout@towede.net</a>
+                    
+                
+                </div>
+            </button>
+           
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                <a>Log In</a>
+                
+            </button>
+            <div class="dropdown-content">
+                <a>Sign Up</a>
+                <a>Sign In</a>
+                <a>Password</a>
+            
+            </div>
+        </div>
+        
+        
+    </nav>
+    
+</header>
+
+
+</div>
+
+

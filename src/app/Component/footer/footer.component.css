@@ -1,0 +1,47 @@
+footer{
+    background-color: rgb(237, 240, 243);
+    column-count: 3;
+    padding:40px;
+    font-family: italic;
+    font-size: 1rem; 
+    color: white;
+    margin-top: 0px;
+    
+}
+
+footer div a{
+    text-decoration: none;
+margin-bottom: 1px;
+color:rgb(95, 83, 83);
+}
+
+.btn{
+    position: absolute;
+    width:45%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.button{
+    background:#fff;
+    border-radius: 50%;
+    height:35%;
+    width:10%;
+    
+    position: relative;
+    margin:0 8px 4px 0;
+    box-shadow:0 8px 10px 0 rgba(0,0,0,.3),inset 0 4px 1px 1px #fff, inset 0 -3px 1px 1px rgba(284,198,197,.5);
+}
+a .fa{
+    font-size: 1rem;
+    color:#111;
+    padding: .5rem;
+
+}
+i .fa:hover{
+    color:#3797a4;
+}
+.button:active{
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,4), inset 0 -3px 1px 1px rgba(204,198,197,.5);
+}
+

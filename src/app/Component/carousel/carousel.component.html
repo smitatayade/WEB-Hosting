@@ -1,0 +1,47 @@
+<ngb-carousel *ngIf="images" class="mt-30px">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[0]" height="400px" alt="first slide">
+    </div>
+   
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[1]" height="400px" alt="second slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Make Your Business Available worldwide!</h3>
+      
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <img [src]="images[2]" height="400px" alt="third slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>Choose Any Domain!</h3>
+      
+    </div>
+  </ng-template>
+</ngb-carousel>
+<div class="design">
+<h3 class="area" style="font-size:3rem;">Find A Domain Name For Your Website</h3>
+<div class="container area">
+  <div class="word">.com</div>
+  <div class="word">.in</div>
+  <div class="word">.co.in</div>
+  <div class="word">.net</div>
+</div>
+<div id="form">
+
+  <div class="search-box">
+    <input type="text" placeholder=".com .in co.in .net .co">
+    <div class="search-icon">
+      <i class="fas fa-search"></i>
+    </div>
+   
+  </div>
+
+</div>
+<p><i style="color:green; font-size:2rem">√</i>Get two free Email IDs with every domain your register</p>
+</div>

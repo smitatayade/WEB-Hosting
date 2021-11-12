@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  color:red;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition:all .2s linear;
+}
+
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body{
+  background:#f7f7f7;
+}
+
+
+
+header{
+  
+  top:0; left: 0; right:0;
+  position: fixed;
+  top:0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:white;
+  padding:1rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+header .logo span{
+  padding-right: .5rem;
+
+}
+
+header .navbar a{
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  color:black;
+  text-decoration: none;
+}
+.dropbtn{
+  background-color: white;
+
+}
+.dropdown{
+  position: relative;
+  display:inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 300px;
+  z-index:1;
+}
+.dropdown-content a{
+  color:black;
+
+  display: block;
+  font-size: .5rem;
+}
+
+
+.dropdown:hover .dropdown-content{
+display: block;
+margin-left: -40px;
+}
+header .navbar a:hover{
+  color:red;
+}
+
+#menu-bar{
+  font-size: 1rem;
+  cursor: pointer;
+  color:blue;
+  border:.1rem solid #666;
+  border-radius: .3rem;
+  padding:.5rem ;
+  transition: all 0.3s;
+  display: none;
+}
+#menu-bar:hover{
+  box-shadow: 0 0 0 6px #fff, 0 0 0 10px #ff7a00;
+  border:2px solid #ff7a00 ;
+}
+#closemenubar{
+  display: none;
+  font-size: 1rem;
+  color:blue;
+  cursor: pointer;
+  border:.1rem solid #666;
+  border-radius: .3rem;
+  padding:.5rem ;
+  transition: all 0.3s;
+  display: none;
+}
+#closemenubar:hover{
+  box-shadow: 0 0 0 6px #fff, 0 0 0 10px #ff7a00;
+  border:2px solid #ff7a00 ;
+}
+
+
+
+/* media queries  */
+
+@media(max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  header{
+    padding:2rem;
+    
+  }
+
+  section{
+    padding:2rem;
+  }
+
+}
+
+@media(max-width:768px){
+
+  #menu-bar{
+    display: initial;
+  }
+
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+  
+  }
+  .dropdown:hover .dropdown-content{
+margin-left: -13px;
+
+}
+  header .navbar{
+    position: absolute;
+    top:80%; left: 0; right:0;
+    background: #f7f7f7;
+    font-size:.5rem;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active{
+    clip-path: polygon(0 0, 550% 0, 550% 550%, 0% 550%);
+  }
+
+  header .navbar a{
+    margin: .3rem;
+    font-size:1rem;
+    padding:.3rem;
+    display: block;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-left:.5rem solid red;
+    background:#fff;
+  }
+  #closemenubar{
+    display:flex;
+  }
+
+}
+
+@media(max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .order .row form .inputBox input{
+    width:100%;
+  }
+
+}
+.modal-body{
+  
+  width:500px;
+  height:300px;
+}
+th{
+  font-size: 23px;
+  color:white;
+}
+td{
+  color:white;
+  font-size: 23px;
+}
